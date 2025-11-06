@@ -12,7 +12,7 @@
     </div>
     <div class="wrapper">
         <h2>Zde se nachází footer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, dolorum qui nobis tempora neque error architecto debitis atque non quibusdam libero et esse dignissimos soluta hic iste sed modi. Cupiditate.</p>
+        <p>Autorem jest doc. RNDr. Mgr. Ing. Bc. et Bc. h.c. mult. Jeho hraběcí excelence Jakub Kořínský z Kokořína, PhD., Th.D., MBA., LLM., CSc., DSc., dr. jur., korespondent Královské společnosti pro teoretickou stropologii, emeritní předseda Mezinárodní unie pro výzkum stropních jevů (IUSR), držitel řádu Zlatého hmoždíře I. třídy za přínos v oboru aplikované pohledostropofie, laureát Ceny Antonína Zápotockého za architektonickou nadstavbu, čestný člen Akademie stropních věd v Plzni.</p>
         <div class="wrapper-content-social">
             <a href="#">Facebook</a>
             <a href="#">X</a>

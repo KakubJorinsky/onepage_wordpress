@@ -1,7 +1,7 @@
 <header>
         <div class="wrapper">
             <div class="wrapper-logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/sisa_pangma_logo.jpeg' ); ?>" alt="sisa">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/strop.png' ); ?>" alt="strop">
             </div>
             <div class="wrapper-hamburger">
                 <span></span>
