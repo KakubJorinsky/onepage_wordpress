@@ -17,13 +17,16 @@ Text Domain: updraft
 body {
     margin: 0;
     padding: 0;
+    background-image: url(/wp-content/themes/strop_sablona/img/baroque_bg.png);
+    background-repeat: calc();
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
   header {
     width: 100%;
     height: 100px;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     position: relative;
-    background-color: none;
+    background-color: #72603b;
   }
   header .wrapper {
     max-width: 1300px;
@@ -33,13 +36,13 @@ body {
     height: 100%;
     justify-content: space-between;
     padding: 0 10px;
-    background: #fff;
+    background: #72603b;
     z-index: 10;
     position: relative;
   }
   header .wrapper-logo {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
   }
   header .wrapper-logo img {
     width: 100%;
@@ -95,7 +98,7 @@ body {
   header nav a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     font-weight: bold;
     transition: ease 0.3s;
   }
@@ -111,9 +114,190 @@ body {
       box-shadow: none;
     }
     header nav a:hover {
-      color: #f00;
+      color: #020088;
     }
   }
   header .is-open {
     transform: translateX(-50%) translateY(0px);
   }
+
+  /* ===========================================================
+   STROPOPEDIE – Barokní WordPress styl (main content only)
+   Autor: ChatGPT (pro Vaši hraběcí Excelenci)
+   =========================================================== */
+
+/* ---- Barevná paleta a písma ---- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+/* ---- Základní nastavení těla stránky ---- */
+
+main {
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(248,244,227,0.96));
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ---- Typografie ---- */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--deep-bordeaux);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+main h1 { font-size: 2.3rem; text-align: center; margin-top: 0; }
+main h2 { font-size: 1.9rem; border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 4px; }
+main h3 { font-size: 1.5rem; color: var(--charcoal); }
+main h4, main h5, main h6 { font-size: 1.2rem; }
+
+main p {
+  font-size: 1rem;
+  color: rgba(43,43,43,0.9);
+  margin-bottom: 1.2em;
+}
+
+/* ---- Odkazy ---- */
+main a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+main a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Odstavce a bloky ---- */
+.wp-block-group,
+.wp-block-paragraph {
+  background: var(--card-bg);
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--gold);
+}
+
+.wp-block-heading {
+  margin-top: 28px;
+}
+
+/* ---- Obrázky ---- */
+.wp-block-image {
+  text-align: center;
+  margin: 32px 0;
+}
+.wp-block-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid var(--gold);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.wp-block-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ---- Citáty / Quote block ---- */
+.wp-block-quote {
+  margin: 36px auto;
+  padding: 24px 30px;
+  background: linear-gradient(180deg, rgba(236,230,220,0.7), rgba(255,255,255,0.7));
+  border-left: 6px solid var(--deep-bordeaux);
+  border-right: 6px solid var(--gold);
+  font-style: italic;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  position: relative;
+}
+.wp-block-quote cite {
+  display: block;
+  text-align: right;
+  color: rgba(43,43,43,0.6);
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* ---- Seznamy ---- */
+ul, ol {
+  margin-left: 40px;
+  margin-bottom: 1.4em;
+}
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ---- Tabulky ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+th, td {
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 12px;
+}
+th {
+  background: var(--gold);
+  color: var(--ivory);
+  text-align: left;
+  font-family: "Cinzel Decorative", serif;
+}
+
+/* ---- Oddělovač / Separator ---- */
+.wp-block-separator {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(198,166,100,0.95), rgba(168,187,216,0.75));
+  border: none;
+  border-radius: 2px;
+  margin: 32px auto;
+}
+
+/* ---- Citátová ozdoba / ornament ---- */
+blockquote:before {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 60px;
+  color: var(--gold);
+  opacity: 0.2;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* ---- Karty / obsahové boxy ---- */
+.card, .wp-block-column {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 8px 24px rgba(43,43,43,0.12);
+  margin-bottom: 24px;
+  position: relative;
+}
+.card:before, .wp-block-column:before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -30px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at 30% 30%, rgba(198,166,100,0.08), transparent 35%);
+  transform: rotate(15deg);
+  pointer-events: none;
+}

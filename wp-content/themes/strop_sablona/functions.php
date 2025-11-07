@@ -1,6 +1,15 @@
 <?php
 function vlastni_sablona_enqueue_styles() {
-    wp_register_style('vlastni-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
-    wp_enqueue_style('vlastni-style');
+    $style_path = get_stylesheet_directory() . '/style.css';
+    $style_uri  = get_stylesheet_directory_uri() . '/style.css';
+
+    wp_enqueue_style(
+        'vlastni-style',
+        $style_uri,
+        [],
+        file_exists( $style_path ) ? filemtime( $style_path ) : null,
+        'all'
+    );
 }
 add_action('wp_enqueue_scripts', 'vlastni_sablona_enqueue_styles');
+add_filter('show_admin_bar', '__return_false');

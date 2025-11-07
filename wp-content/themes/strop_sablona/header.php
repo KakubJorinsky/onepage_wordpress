@@ -1,7 +1,8 @@
+<?php wp_head(); ?>
 <header>
         <div class="wrapper">
             <div class="wrapper-logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/strop.png' ); ?>" alt="strop">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/encystropedie_circle.png' ); ?>" alt="strop">
             </div>
             <div class="wrapper-hamburger">
                 <span></span>
@@ -10,8 +11,6 @@
             </div>
         </div>       
         <nav>
-            <a href="#">Home page</a>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="http://localhost">EncySTROPedie</a>
         </nav>
 </header>

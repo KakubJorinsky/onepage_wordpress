@@ -42,5 +42,5 @@ get_header(); // Načte header.php
 </main>
 
 <?php
-get_footer(); // Načte footer.php
+get_footer();; // Načte footer.php
 ?>
