@@ -4,6 +4,10 @@ get_header();
 <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/style/footer.css' ); ?>">
 <main id="primary" class="site-main">
     <section class="error-404 not-found">
+        <br>
+        <br>
+        <br>
+        <br>
         <h1 class="page-title">Experimentální odchylka 404: Stránka se zřítila do epistemologického vakua.</h1>
         <br>
         <br>

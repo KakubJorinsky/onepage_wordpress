@@ -11,6 +11,12 @@
             </div>
         </div>       
         <nav>
-            <a href="http://localhost">EncySTROPedie</a>
+            <a href="http://localhost/#uvod">Úvod</a>
+            <a href="http://localhost/#ukotveni">Směry</a>
+            <a href="http://localhost/#kkksvl">K<sup>3</sup>SVL</a>
+            <a href="http://localhost/#tusoc">TUSOČ</a>
+            <a href="http://localhost/#diskuse">Diskuse</a>
+            <a href="http://localhost/#zaver">Závěr</a>
+            <a href="http://localhost/#bibliografie">Bibliografie</a>
         </nav>
 </header>

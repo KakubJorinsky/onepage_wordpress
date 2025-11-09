@@ -3,7 +3,7 @@
 <html <?php language_attributes();?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' );?>">
-        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             <?php
             if ( is_front_page() ) { // Pokud je to domovská stránka (statická stránka)
@@ -14,7 +14,7 @@
             ?>
         </title>
         <script src="<?php echo esc_url( get_template_directory_uri() . '/script/script.js' ); ?>" defer></script>
-        <link rel="stylesheet" href="<?= $theme_url  ?>./style.css">
+        <link rel="stylesheet" href="<?= $theme_url  ?>/style.css">
         <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/style/footer.css' ); ?>">
         <?php wp_head()?>
     </head>
